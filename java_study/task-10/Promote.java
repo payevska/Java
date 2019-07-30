@@ -8,6 +8,7 @@ class Promote {
 		double d = .1234;
 		double result = (f * b) + (i / c) - (d * s);
 		System.out.println((f * b) + " + " + (i / c) + " - " + (d * s));
+		// answer is type double
 		System.out.println("result = " + result);
 	}
 }

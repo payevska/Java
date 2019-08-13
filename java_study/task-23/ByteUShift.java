@@ -10,9 +10,9 @@ class ByteUShift {
 		System.out.println( b ); // -15
 		byte c = (byte) (b >> 4); //0xff: 11111111
 		System.out.println( c ); //-1
-		byte d = (byte) (b >>> 4); //0xff: 11111111
+		byte d = (byte) (b >>> 4); // don't chanch: 11111111
 		System.out.println( d ); //-1
-		byte e = (byte) ((b & 0xff) >> 4); //0xff 255: 11111111
+		byte e = (byte) ((b & 0xff) >> 4); //0x0f: 00001111
 		System.out.println( e ); // 15
 
 		System.out.println("b = 0x" + hex[(b >> 4) & 0x0f] + hex[b & 0x0f]);
